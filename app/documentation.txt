@@ -1,0 +1,24 @@
+add
+repositories {
+  maven { url "https://jitpack.io" }
+  mavenCentral()
+}
+
+in build.gradle(module)
+
+add
+dependencies {
+	// ... other dependencies here
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'com.afollestad.material-dialogs:commons:0.9.6.0'
+    implementation 'com.firebaseui:firebase-ui-auth:4.0.0'
+    implementation 'com.github.javiersantos:MaterialStyledDialogs:3.0.1'
+    implementation 'io.github.pilgr:paperdb:2.7.1'
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+    implementation 'com.google.code.gson:gson:2.3.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation platform('com.google.firebase:firebase-bom:28.4.1')
+    implementation 'com.google.firebase:firebase-database'
+}
+
+in build.gradle(app)
