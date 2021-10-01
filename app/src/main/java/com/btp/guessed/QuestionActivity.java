@@ -690,7 +690,7 @@ public class QuestionActivity extends AppCompatActivity implements NavigationVie
     public boolean onPrepareOptionsMenu(Menu menu)
     {
         MenuItem item = menu.findItem(R.id.menu_wrong_answer);
-        ConstraintLayout constraintLayout = (ConstraintLayout)item.getActionView();
+        ConstraintLayout constraintLayout = (ConstraintLayout) item.getActionView();
         txt_wrong_answer = constraintLayout.findViewById(R.id.txt_wrong_answer);
         txt_wrong_answer.setText(String.valueOf(Common.wrong_answer_count));
 
