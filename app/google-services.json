@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "360212056707",
+    "project_id": "guessedtemp",
+    "storage_bucket": "guessedtemp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360212056707:android:cd122877acaac3393d29b6",
+        "android_client_info": {
+          "package_name": "com.btp.guessed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360212056707-ivpht2hek6opnreb6jtdo05g97ahhg9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0fDTFDt3119GtZ7H7wNfVkf_z8S82l5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360212056707-ivpht2hek6opnreb6jtdo05g97ahhg9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
