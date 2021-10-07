@@ -20,7 +20,7 @@
             android:layout_marginBottom="8dp"
             android:id="@+id/grid_answer"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+            android:layout_height="wrap_content"/>
 
         <TextView
             android:id="@+id/txt_answer_right"
@@ -33,15 +33,12 @@
             android:textColor="@android:color/white"
             android:visibility="gone"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/grid_answer"
-            android:layout_marginLeft="8dp" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txt_timer"
-            android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
             android:text="20:00"
             android:layout_centerVertical="true"
             android:textSize="24sp"
@@ -63,13 +60,13 @@
             android:id="@+id/sliding_tabs"
             app:tabMode="scrollable"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></com.google.android.material.tabs.TabLayout>
+            android:layout_height="wrap_content"/>
 
         <com.btp.guessed.Misc.CustomViewPager
             android:id="@+id/viewpager"
             android:background="@android:color/white"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></com.btp.guessed.Misc.CustomViewPager>
+            android:layout_height="match_parent"/>
 
 
     </LinearLayout>
