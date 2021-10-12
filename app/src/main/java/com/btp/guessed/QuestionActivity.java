@@ -14,6 +14,8 @@ import com.google.android.material.tabs.TabLayout;
 import dev.shreyaspatil.MaterialDialog.MaterialDialog;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.constraintlayout.widget.ConstraintLayout;
+//import android.support.constraint.ConstraintLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.viewpager.widget.ViewPager;
@@ -690,7 +692,7 @@ public class QuestionActivity extends AppCompatActivity implements NavigationVie
     public boolean onPrepareOptionsMenu(Menu menu)
     {
         MenuItem item = menu.findItem(R.id.menu_wrong_answer);
-        ConstraintLayout constraintLayout = (ConstraintLayout) item.getActionView();
+        CoordinatorLayout constraintLayout = (CoordinatorLayout) item.getActionView();
         txt_wrong_answer = constraintLayout.findViewById(R.id.txt_wrong_answer);
         txt_wrong_answer.setText(String.valueOf(Common.wrong_answer_count));
 
