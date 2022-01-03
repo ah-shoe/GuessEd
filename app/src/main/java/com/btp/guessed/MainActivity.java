@@ -3,6 +3,7 @@ package com.btp.guessed;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,6 +30,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import org.opencv.android.OpenCVLoader;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
@@ -48,6 +51,14 @@ public class MainActivity extends AppCompatActivity {
     private static final int MY_REQUEST_CODE = 7117;
     List<AuthUI.IdpConfig> providers;
     //Button btn_sign_out;
+    static{
+        if(OpenCVLoader.initDebug()){
+            Log.d("MainActivity","OpenCV is loaded");
+        }
+        else {
+            Log.d("MainActivity","OpenCV is not loaded");
+        }
+    }
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
     @Override
