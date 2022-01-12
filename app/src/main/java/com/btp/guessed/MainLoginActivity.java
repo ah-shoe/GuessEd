@@ -93,6 +93,7 @@ public class MainLoginActivity extends AppCompatActivity
                 // Successfully signed in, now get user
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 Toast.makeText(this, "Signed in as: "+user.getEmail(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "GuessEd is using your camera!", Toast.LENGTH_SHORT).show();
                 // ...
 //                btn_sign_out.setEnabled(true);
             } else {

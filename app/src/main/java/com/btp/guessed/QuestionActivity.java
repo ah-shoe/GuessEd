@@ -82,6 +82,7 @@ public class QuestionActivity extends AppCompatActivity implements NavigationVie
     //personal modifications
     //Button btn_sign_out;
     private boolean isDoItAgainMode = false;
+    private Button camera_button;
 
     @Override
     protected void onDestroy()
@@ -134,6 +135,14 @@ public class QuestionActivity extends AppCompatActivity implements NavigationVie
         answer_sheet_helper.addItemDecoration(new SpaceDecoration(2));
         answerSheetHelperAdapter = new AnswerSheetHelperAdapter(this, Common.answerSheetList);
         answer_sheet_helper.setAdapter(answerSheetHelperAdapter);
+
+        camera_button=findViewById(R.id.camera_button);
+        camera_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(QuestionActivity.this,CameraActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+            }
+        });
 
 
         //personal modifications
